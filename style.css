@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 40px auto;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #333;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    margin-bottom: 30px;
+}
+
+header .logo h1 {
+    color: white;
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ffdd57;
+    text-decoration: underline;
+}
+
+form {
+    margin-bottom: 30px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+input, button, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    vertical-align: middle; 
+}
+
+th {
+    background: #eee;
+}
+
+.botao-editar, .botao-excluir {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.botao-editar {
+    background-color: #3498db;
+}
+
+.botao-excluir {
+    background-color: #e74c3c;
+}
+
+.botao-editar:hover {
+    background-color: #2980b9;
+}
+
+.botao-excluir:hover {
+    background-color: #c0392b;
+}
+
+.celula-acoes {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.celula-acoes form {
+    margin: 0;
+    display: contents;
+}
+
+.celula-acoes .botao-excluir {
+    margin-top: 0;
+    width: auto;
+}
+
+@media (max-width: 480px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    header nav {
+        margin-top: 10px;
+    }
+  
+    header nav a {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+}
