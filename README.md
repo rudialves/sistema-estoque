@@ -35,16 +35,21 @@ Este é um sistema simples de controle de estoque desenvolvido em PHP com SQLite
 
 ## Como executar
 
+## Como executar
+
 1. Clone este repositório:
-git clone https://github.com/rudialves/sistema-estoque.git
+   git clone https://github.com/rudialves/sistema-estoque.git
 
 2. Copie a pasta clonada para o diretório do XAMPP:
-C:\xampp\htdocs\
+   C:\xampp\htdocs\
 
 3. Abra o XAMPP e inicie o Apache.
 
 4. Crie as tabelas necessárias acessando no navegador:
-http://localhost/sistema-estoque/setup.php
+   http://localhost/sistema-estoque/setup.php
 
-5. Acesse o sistema:
-http://localhost/sistema-estoque/index.php
+5. Atualize a estrutura do banco de dados (obrigatório para evitar erros):
+   http://localhost/sistema-estoque/alterar_tabela.php
+
+6. Acesse o sistema:
+   http://localhost/sistema-estoque/index.php
